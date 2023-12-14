@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio using Tailwind CSS</title>
+  </head>
+  <body class="bg-slate-700">
+    <!-- navbar goes here -->
+    <header class=" bg-slate-900 fixed top-0 right-0 left-0">
+      <nav class="w-auto mx-auto bg-gray-800  p-5 order-[10001]">
+        <div class="flex items-center justify-between">
+          <a href="#" class="text-white font-bold text-lg flex items-center gap-3">
+            <img src="img/Logo.svg" alt="" class="w-8 h-8" /> Portfolio </a>
+          <!-- only for large device -->
+          <div class="hidden md:flex space-x-10">
+            <a href="#home" class="text-white hover:text-gray-300">Home</a>
+            <a href="#project" class="text-white hover:text-gray-300">Projects</a>
+            <a href="#skill" class="text-white hover:text-gray-300">Skills</a>
+            <a href="#education" class="text-white hover:text-gray-300">Educations</a>
+            <a href="#address" class="text-white hover:text-gray-300">Address</a>
+            <a href="#hobbie" class="text-white hover:text-gray-300">Hobbies</a>
+            <a href="#resume" class="text-white hover:text-gray-300">Resume</a>
+          </div>
+          <!-- menu btn, only disply on mobile -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white text-2xl"> &#8801; </button>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <a href="#home" class="block text-white py-2 mt-3 hover:bg-gray-700">Home</a>
+          <a href="#project" class="block text-white py-2 hover:bg-gray-700">Projects</a>
+          <a href="#skill" class="block text-white py-2 hover:bg-gray-700">Skills</a>
+          <a href="#education" class="block text-white py-2 hover:bg-gray-700">Educations</a>
+          <a href="#address" class="block text-white py-2 hover:bg-gray-700">Address</a>
+          <a href="#hobbie" class="block text-white py-2 hover:bg-gray-700">Hobbies</a>
+          <a href="#resume" class="block text-white py-2 hover:bg-gray-700">Resume</a>
+        </div>
+      </nav>
+    </header>
+    <!-- nabbar ends here -->
+    <!-- banner section -->
+    <section class="max-w-7xl mx-auto px-5 my-12" id="home">
+      <div class="flex md:flex-row flex-col justify-between items-center text-white gap-4 py-10">
+        <div class="md:w-1/2 md:mt-10">
+          <p class="text-xl font-medium mb-4"> Hello, <span class="text-primary">I'm</span>
+          </p>
+          <h1 class="font-bold text-4xl tracking-[3.22px] mb-5">Arun Yadav</h1>
+          <p class="text-2xl font-montserrat mb-5"> Front-end Developer </p>
+          <p class="text-xl mb-12 md:w-3/4 text-justify mr-4"> A passionate front-end developer with a love for transforming ideas into captivating digital experiences. My journey in web development began with a fascination for the intersection of design and code, and since then, I've been on a mission to create seamless, user-centric interfaces that leave a lasting impression. </p>
+          <!-- social btn -->
+          <div class="mt-12 mb-8 flex gap-4 items-center">
+            <p>Check out My:</p>
+            <div class="flex space-x-3">
+              <a href="#">
+                <img src="icons/instagram.svg" alt="" class="w-8 h-8" />
+              </a>
+              <a href="#">
+                <img src="icons/linkedIn.svg" alt="" class="w-8 h-8" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" order-first md:order-none md:mr-16 md:w-30">
+          <img src="./img/photo.jpg" alt="" class="md:ml-20 border-6 border-indigo-400 rounded-lg h-44 md:h-[360px]" />
+        </div>
+      </div>
+    </section>
+    <!-- service section -->
+    <section class="max-w-7xl mx-auto px-5 my-6 text-white" id="project">
+      <div class="text-center">
+        <p class="font-montserrat text-3xl font-bold mb-5">Projects</p>
+      </div>
+      <!-- service cards -->
+      <div class="my-16 flex flex-col md:flex-row justify-around items-center gap-12">
+        <div class="w-[354px] px-5 py-8 rounded-lg border-primary shadow-[#5dadec3b] shadow-2xl">
+          <img src="https://cdn.pixabay.com/photo/2022/09/08/11/27/project-management-7440746_640.jpg" alt="" class="w-[196px] mb-12 mx-auto md:rounded-lg shadow-[#82adce3b] shadow-xl border-none border-slate-600" />
+          <h5 class="text-center my-5 text-xl">EPR Battery</h5>
+          <p class="text-justify"> A project that involves multiple users, collecting data from them, paying them, and producing a certificate. </p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border-primary shadow-[#5dadec3b] shadow-2xl">
+          <img src="https://cdn.pixabay.com/photo/2022/09/08/11/27/project-management-7440746_640.jpg" alt="" class="w-[196px] mb-12 mx-auto md:rounded-lg shadow-[#82adce3b] shadow-xl border-none border-slate-600" />
+          <h5 class="text-center my-5 text-xl">EPR Waste Tyre</h5>
+          <p class="text-justify"> A project that involves multiple users, collecting data from them, paying them, and producing a certificate. </p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border-primary shadow-[#5dadec3b] shadow-2xl">
+          <img src="https://cdn.pixabay.com/photo/2022/09/08/11/27/project-management-7440746_640.jpg" alt="" class="w-[196px] mb-12 mx-auto md:rounded-lg shadow-[#82adce3b] shadow-xl border-none border-slate-600" />
+          <h5 class="text-center my-5 text-xl">Glavour (Food Delivery System)</h5>
+          <p class="text-justify"> I developed an inventory management module that ensures complete product information is maintained. </p>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+    <section class="max-w-7xl mx-auto px-5 my-8 text-white" id="skill">
+      <div class="text-center">
+        <p class="font-montserrat text-3xl font-bold mb-5">Technical Skills</p>
+      </div>
+      <!-- service cards -->
+      <div class=" flex-wrap my-10 md:my-16 flex flex-col md:flex-row justify-around items-center gap-4 md:gap-12">
+
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+          <h5 class="text-center my-5 text-xl">Laravel</h5> 
+        </div>
+
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+          
+          <h5 class="text-center my-5 text-xl">PHP</h5>
+          
+        </div>
+
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+          
+          <h5 class="text-center my-5 text-xl">MySQL</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+         
+          <h5 class="text-center my-5 text-xl">HTML5</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+         
+          <h5 class="text-center my-5 text-xl">CSS3</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+          
+          <h5 class="text-center my-5 text-xl">Tailwind CSS</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+         
+          <h5 class="text-center my-5 text-xl">JavaScript</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+          
+          <h5 class="text-center my-5 text-xl">JQuery</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+         
+          <h5 class="text-center my-5 text-xl">API</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+         
+          <h5 class="text-center my-5 text-xl">Bootstrap</h5>
+         
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+          
+          <h5 class="text-center my-5 text-xl">Git</h5>
+          
+        </div>
+        <div class="w-[160px] px-5 py-2 rounded-2xl  border-primary shadow-zinc-500 shadow-inner">
+         
+          <h5 class="text-center my-5 text-xl">React js</h5>
+          
+        </div>
+        
+      </div>
+    </section>
+    <!-- Education -->
+    <section class="max-w-7xl mx-auto px-5 my-6 text-white" id="education">
+      <div class="text-center">
+        <p class="font-montserrat text-3xl font-bold mb-5">Educations</p>
+      </div>
+      <!-- service cards -->
+      <div class="my-16 flex flex-col md:flex-row justify-around items-center gap-12">
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <!-- <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" /> -->
+          <h5 class="text-center my-5 text-xl">Class - X</h5>
+          <p class="text-justify"> S.R.H HSS MIRZAPUR CHAUHARI PRATAPGARH</p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <!-- <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" /> -->
+          <h5 class="text-center my-5 text-xl">Class - XII</h5>
+          <p class="text-justify"> HINDU I.C MUNGRA BADSHAHPUR JAUNPUR </p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <!-- <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" /> -->
+          <h5 class="text-center my-5 text-xl">B.Tech</h5>
+          <p class="text-justify"> ABES Engineering College, Ghaziabad</p>
+        </div>
+      </div>
+    </section>
+    <!-- Address -->
+    <section class="max-w-7xl mx-auto px-5 my-6 text-white" id="address">
+      <div class="text-center">
+        <p class="font-montserrat text-3xl font-bold mb-5">Address</p>
+      </div>
+      <!-- service cards -->
+      <div class="my-16 flex flex-col md:flex-row justify-around items-center gap-12">
+        <!-- <div
+            class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl"
+          ><img
+              src="img/graphic-design.svg"
+              alt=""
+              class="w-[196px] mb-12 mx-auto"
+            /><h5 class="text-center my-5 text-xl">Graphic Designer</h5><p class="text-justify">
+              strive to create visually impact designs that effectively
+              communicate ,messages & meet their unique needs.
+            </p></div> -->
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" />
+          <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+          <p class="text-justify"> strive to create visually impact designs that effectively communicate ,messages & meet their unique needs. </p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" />
+          <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+          <p class="text-justify"> strive to create visually impact designs that effectively communicate ,messages & meet their unique needs. </p>
+        </div>
+      </div>
+    </section>
+    <!-- Hobbies -->
+    <section class="max-w-7xl mx-auto px-5 my-6 text-white" id="hobbie">
+      <div class="text-center">
+        <p class="font-montserrat text-3xl font-bold mb-5">Hobbies</p>
+      </div>
+      <!-- service cards -->
+      <div class="my-16 flex flex-col md:flex-row justify-around items-center gap-12">
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" />
+          <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+          <p class="text-justify"> strive to create visually impact designs that effectively communicate ,messages & meet their unique needs. </p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" />
+          <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+          <p class="text-justify"> strive to create visually impact designs that effectively communicate ,messages & meet their unique needs. </p>
+        </div>
+        <div class="w-[354px] px-5 py-8 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl">
+          <img src="img/graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto" />
+          <h5 class="text-center my-5 text-xl">Graphic Designer</h5>
+          <p class="text-justify"> strive to create visually impact designs that effectively communicate ,messages & meet their unique needs. </p>
+        </div>
+      </div>
+    </section>
+    <!-- reviews  -->
+    <footer class=" bg-slate-900 w-auto mx-auto mb-0">
+      <div class="text-slate-500 flex flex-col md:flex-row justify-center items-center md:items-center">
+        <p> 2023 - 2024 | All rights reserved</p>
+      </div>
+    </footer>
+    <script src="../src/app.js"></script>
+  </body>
+</html>
